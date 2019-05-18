@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {margin:0; padding:0; }
+					li{list-style:none; }
+					#div1{
+						width:850px;
+					    height:500px; 
+						margin:50px auto; 
+						overflow:hidden;
+						position:relative;
+					}
+					#div1 ul{
+						width: 5950px;
+						position: absolute;
+						top: -500px;
+					}
+					#div1 ul li{
+						height:500px;
+						width:850px;
+					}
+				    img{
+				    	width:850px; 
+						height:500px;
+						vertical-align: top;
+					}
+					#div1 ol {
+						position:absolute;
+					    right: 10%;
+						bottom: 10px;
+						z-index:6
+					}
+					#div1 ol li{
+						width: 20px;
+						height: 20px;
+						background: #fff;
+						margin-left: 5px;
+						border-radius: 10px;
+						float: left;
+						line-height: 20px;
+						text-align: center;
+						cursor: pointer;
+					}
+					#div1 ol li.ac{
+						background: red;
+					    color: #fff;
+					}
+					#div1>a{
+						text-decoration: none;
+						position: absolute;
+						top: 50%;
+						margin-top: -10px;
+						height: 40px;
+						line-height: 32px;
+						text-align: center;
+						width: 40px;
+						font-size: 40px;		
+						color: #fff;
+						background: rgba(0,0,0,0.5);
+						z-index:6;
+					}
+				   #goPrev{left: 0;}
+				   #goNext{right: 0;}
+			  </style>
+		</head>
+	<body>
+		<div id="div1">
+				   <ul>
+						<li><a href="javascript:alert(4);"><img src="img/5.jpg" /></a></li>
+				     	<li><a href="javascript:alert(0);"><img src="img/1.jpg" /></a></li>
+				     	<li><a href="javascript:alert(1);"><img src="img/2.jpg" /></a></li>
+				     	<li><a href="javascript:alert(2);"><img src="img/3.jpg" /></a></li>
+				     	<li><a href="javascript:alert(3);"><img src="img/4.jpg" /></a></li>
+						<li><a href="javascript:alert(4);"><img src="img/5.jpg" /></a></li>
+						<li><a href="javascript:alert(0);"><img src="img/1.jpg" /></a></li>
+				   </ul>
+				   <ol>
+				    	<li class="ac">1</li>
+				    	<li>2</li>
+				    	<li>3</li>
+				    	<li>4</li>
+				    	<li>5</li>
+				   </ol>
+				   <a href="javascript:;" id="goPrev" >&laquo;</a>
+				   <a href="javascript:;" id="goNext" >&raquo;</a>
+		</div>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
